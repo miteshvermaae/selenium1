@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+
+    <listeners>
+        <listener class-name="com.seltests.listeners.TestngListener"/>
+        <listener class-name="com.seltests.listeners.TestngListener2"/>
+    </listeners>
+
+    <test name="Regression Test">
+
+        <classes>
+            <class name="com.seltests.TestRunnerRegression"/>
+        </classes>
+    </test>
+
+    <test name="Regression Test2">
+
+        <classes>
+            <class name="com.seltests.TestRunnerRegression2"/>
+        </classes>
+    </test>
+</suite>
